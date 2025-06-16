@@ -157,3 +157,12 @@ const { title, author, pages, publicationDate, genres, hasMovieAdaptation } =
 // const secondaryGenre = genres[1]
 
 const [primaryGenre, secondaryGenre] = genres;
+
+const summary = `${title}, a {pages}-- book, war written by ${author}, was published on ${publicationDate}. It is a ${primaryGenre} book`;
+summary;
+
+function getYear(str) {
+  return str.split('-')[0];
+}
+const getYear = (str) => str.split('-')[0];
+console.log(getYear(publicationDate)); // 1965
